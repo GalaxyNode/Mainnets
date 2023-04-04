@@ -184,7 +184,7 @@ $daemon tx staking create-validator \
     --yes
 ```
 
-#### After that, you can go to the block [explorer](https://explorer.ppnv.space/sge) to check whether your validator is created successfully.
+#### After that, you can go to the block [explorer](https://uptick.explorers.guru/) to check whether your validator is created successfully.
 ----
 
   <h4 align="center"> More information </h4>
