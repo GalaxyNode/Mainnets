@@ -140,7 +140,7 @@ The display `"catching_up":` shows `false` that it has been synchronized. Synchr
 [Up to sections ↑](#anchor)
 #### Replace addrbook
 ```
-wget -O $HOME/.noisd/config/addrbook.json "https://raw.githubusercontent.com/GalaxyNode/Mainnets/main/Uptick/addrbook.json"
+wget -O $HOME/.noisd/config/addrbook.json "https://raw.githubusercontent.com/GalaxyNode/Mainnets/main/Nois/addrbook.json"
 ```
 <a id="validator"></a>
 ### Create a validator
