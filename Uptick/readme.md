@@ -18,7 +18,7 @@
 | <a href="https://uptick.explorers.guru/validators" target="_explorer">Explorer</a> |  Check whether your validator is created successfully |
 
 
- <p align="center"><a href="https://docs.uptick.network/"><img align="right"width="100px"alt="defund" src="https://i.ibb.co/HqT4jtX/Zw-Ciwc-R8-400x400.jpg"></p</a>
+ <p align="center"><a href="https://docs.uptick.network/"><img align="right"width="100px"alt="uptick" src="https://i.ibb.co/HqT4jtX/Zw-Ciwc-R8-400x400.jpg"></p</a>
 
 | Minimum configuration                                                                                |
 |------------------------------------------------------------------------------------------------------|
@@ -65,7 +65,7 @@ cd uptick
 git checkout v0.2.4
 make install
 ```
-After the installation is complete, you can run `defundd version` to check whether the installation is successful.
+After the installation is complete, you can run `uptickd version` to check whether the installation is successful.
 
 Display should be v0.2.4
 <a id="run"></a>
@@ -101,7 +101,7 @@ sed -i 's|^pruning-keep-recent  *=.*|pruning-keep-recent = "100"|g' $HOME/.uptic
 sed -i 's|^pruning-interval *=.*|pruning-interval = "10"|g' $HOME/.uptickd/config/app.toml
 sed -i 's|^snapshot-interval *=.*|snapshot-interval = 2000|g' $HOME/.uptickd/config/app.toml
   
- sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0001usge"|g' $HOME/.uptickd/config/app.toml
+ sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0001auptick"|g' $HOME/.uptickd/config/app.toml
 sed -i 's|^prometheus *=.*|prometheus = true|' $HOME/.uptickd/config/config.toml
 ```
 #### Start node 
@@ -140,7 +140,7 @@ The display `"catching_up":` shows `false` that it has been synchronized. Synchr
 [Up to sections ↑](#anchor)
 #### Replace addrbook
 ```
-wget -O $HOME/.defund/config/addrbook.json "https://raw.githubusercontent.com/GalaxyNode/Mainnets/main/Uptick/addrbook.json"
+wget -O $HOME/.uptick/config/addrbook.json "https://raw.githubusercontent.com/GalaxyNode/Mainnets/main/Uptick/addrbook.json"
 ```
 <a id="validator"></a>
 ### Create a validator
@@ -178,7 +178,7 @@ $daemon tx staking create-validator \
     --commission-rate=0.05 \
     --commission-max-rate=0.1 \
     --commission-max-change-rate=0.1 \
-    --min-self-delegation=1000000 \
+    --min-self-delegation=1 \
     --fees 600$denom \
     --from=WALLET_NAME\
     --yes

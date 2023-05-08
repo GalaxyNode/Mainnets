@@ -62,12 +62,12 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 cd $HOME
 git clone https://github.com/noislabs/noisd
 cd noisd
-git checkout v1.0.0
-make install
+git checkout v1.0.2
+make installll
 ```
-After the installation is complete, you can run `defundd version` to check whether the installation is successful.
+After the installation is complete, you can run `uptickd version` to check whether the installation is successful.
 
-Display should be v1.0.0
+Display should be v1.0.2
 <a id="run"></a>
 ### -Run node
 
@@ -101,7 +101,7 @@ sed -i 's|^pruning-keep-recent  *=.*|pruning-keep-recent = "100"|g' $HOME/.noisd
 sed -i 's|^pruning-interval *=.*|pruning-interval = "10"|g' $HOME/.noisd/config/app.toml
 sed -i 's|^snapshot-interval *=.*|snapshot-interval = 2000|g' $HOME/.noisd/config/app.toml
   
- sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0001usge"|g' $HOME/.noisd/config/app.toml
+ sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.0001unois"|g' $HOME/.noisd/config/app.toml
 sed -i 's|^prometheus *=.*|prometheus = true|' $HOME/.noisd/config/config.toml
 ```
 #### Start node 
