@@ -60,13 +60,13 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 
 ```
 cd $HOME
-wget https://github.com/ingenuity-build/quicksilver/releases/download/v1.2.9-hotfix.0/quicksilverd-v1.2.9-hotfix.0-amd64
-chmod +x quicksilverd-v1.2.9-hotfix.0-amd64
-mv quicksilverd-v1.2.9-hotfix.0-amd64 $HOME/go/bin/quicksilverd
+wget https://github.com/ingenuity-build/quicksilver/releases/download/v1.2.10/quicksilverd-v1.2.10-amd64
+chmod +x quicksilverd-v1.2.10-amd64
+mv quicksilverd-v1.2.10-amd64 $HOME/go/bin/quicksilverd
 ```
 After the installation is complete, you can run `quicksilverd version` to check whether the installation is successful.
 
-Display should be v1.2.9-hotfix.0
+Display should be v1.2.10
 <a id="run"></a>
 ### -Run node
 
