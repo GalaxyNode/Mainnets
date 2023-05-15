@@ -18,7 +18,7 @@
 | <a href="https://quicksilver.explorers.guru/validators" target="_explorer">Explorer</a> |  Check whether your validator is created successfully |
 
 
- <p align="center"><a href="https://docs.quicksilver.zone/"><img align="right"width="100px"alt="defund" src="https://i.ibb.co/7jrTDFG/V2g-Pw-Ve-O-400x400.jpg"></p</a>
+ <p align="center"><a href="https://docs.quicksilver.zone/"><img align="right"width="100px"alt="Quicksilver" src="https://i.ibb.co/7jrTDFG/V2g-Pw-Ve-O-400x400.jpg"></p</a>
 
 | Minimum configuration                                                                                |
 |------------------------------------------------------------------------------------------------------|
@@ -139,7 +139,7 @@ The display `"catching_up":` shows `false` that it has been synchronized. Synchr
 [Up to sections ↑](#anchor)
 #### Replace addrbook
 ```
-wget -O $HOME/.defund/config/addrbook.json "https://snapshots.kjnodes.com/quicksilver/addrbook.json"
+wget -O $HOME/.quicksilverd/config/addrbook.json "https://snapshots.kjnodes.com/quicksilver/addrbook.json"
 ```
 <a id="validator"></a>
 ### Create a validator
