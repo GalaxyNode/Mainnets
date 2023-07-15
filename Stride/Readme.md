@@ -61,12 +61,12 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 ```
 cd $HOME
 git clone https://github.com/Stride-Labs/stride.git && cd stride
-git checkout v9.2.1
+git checkout v11.0.0
 make install
 ```
 After the installation is complete, you can run `strided version` to check whether the installation is successful.
 
-Display should be v9.2.1
+Display should be v11.0.0
 <a id="run"></a>
 ### -Run node
 
