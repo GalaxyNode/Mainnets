@@ -61,12 +61,12 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 ```
 cd $HOME
 git clone https://github.com/Stride-Labs/stride.git && cd stride
-git checkout v13.1.0
+git checkout v16.0.0
 make install
 ```
 After the installation is complete, you can run `strided version` to check whether the installation is successful.
 
-Display should be v13.1.0
+Display should be v16.0.0
 <a id="run"></a>
 ### -Run node
 
@@ -81,14 +81,14 @@ strided config chain-id stride-1
 #### Download the Genesis file
 
 ```
-curl -s https://raw.githubusercontent.com/Stride-Labs/testnet/infra-test/poolparty/infra/genesis.json > ~/.strided/config/genesis.json
+curl -s hhttps://raw.githubusercontent.com/Stride-Labs/mainnet/main/mainnet/genesis.json > ~/.strided/config/genesis.json
 ```
 
 #### Set peer and seed
 
 ```
 SEEDS=""
-PEERS="d6583df382d418872ab5d71d45a1a8c3d28ff269@138.201.139.175:21016,05d7b774620b7afe28bba5fa9e002b436786d4c3@195.201.165.123:20086,d28cfff8b2fe03b597f67c96814fbfd19085b7c3@168.119.124.158:26656,a9687b78c13d39d2f96ec0905c6aa201671f61f0@78.107.234.44:25656,6922feb0ca2eab2be07d60fbfd275319bcd83ec9@77.244.66.222:26656,48b1310bc81deea3eb44173c5c26873c23565d33@34.135.129.186:26656,a3afae256ad780f873f85a0c377da5c8e9c28cb2@54.219.207.30:26656,dd93bd24192d8d3151264424e44b0f213d2334dc@162.55.173.64:26656,d46c3c3de3aacb7c75bbbbf1fe5c168f0c100f26@135.181.131.116:26683,c765007c489ddbcb80249579534e63d7a00407d0@65.108.225.158:22656"
+PEERS="8504bdec910782f31e26d90a439f2670dff40ef6@51.79.101.159:26656,37a6a664eb693cf6fc438e202526401a07d515f1@51.89.7.234:26639,04b797b5a56fb939a97a3c7d9c3230d09b85e8d7@93.189.30.118:26656,a0d2f043f71ed37da4bc2c18fda854542ba70b46@65.108.230.45:2000,9a49054747e57cf5c4084cdf0710a23eeb6d0b03@95.179.201.94:12256,967d8818df04f661057912e804d8dcd1b8aadb4f@168.119.78.111:26656"
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.strided/config/config.toml
 ```
 [Up to sections ↑](#anchor)
@@ -178,7 +178,7 @@ $daemon tx staking create-validator \
     --yes
 ```
 
-#### After that, you can go to the block [explorer](https://stride.explorers.guru/validators) to check whether your validator is created successfully.
+#### After that, you can go to the block [explorer](https://explorer.nodestake.top/stride) to check whether your validator is created successfully.
 ----
 
   <h4 align="center"> More information </h4>
