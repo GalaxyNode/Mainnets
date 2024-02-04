@@ -62,12 +62,12 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 cd $HOME
 git clone https://github.com/UptickNetwork/uptick.git
 cd uptick
-git checkout v0.2.8
+git checkout v0.2.18
 make install
 ```
 After the installation is complete, you can run `uptickd version` to check whether the installation is successful.
 
-Display should be v0.2.8
+Display should be v0.2.18
 <a id="run"></a>
 ### -Run node
 
