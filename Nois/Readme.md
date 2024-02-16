@@ -62,12 +62,12 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 cd $HOME
 git clone https://github.com/noislabs/noisd
 cd noisd
-git checkout v1.0.4
+git checkout v1.0.5
 make installll
 ```
 After the installation is complete, you can run `uptickd version` to check whether the installation is successful.
 
-Display should be v1.0.4
+Display should be v1.0.5
 <a id="run"></a>
 ### -Run node
 
